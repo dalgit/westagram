@@ -1,0 +1,40 @@
+.navbar{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    height:60px;
+    position:fixed;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.leftLogo{
+    font-family: 'Lobster', cursive;
+    font-size:31px;
+    margin-bottom: 5px;
+}
+
+.leftLogo img{
+    height:20px;
+}
+
+.navbar input{
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 35%;
+    background-size: 15px;
+
+    background-color: #FAFAFA;
+    text-align: center;
+    width:200px;
+    height: 30px;
+    border:1px solid #EFEFEF;
+    border-radius: 3px;
+}
+
+.rigthMenu img{
+    width:30px;
+    margin-right: 23px;
+}
+
