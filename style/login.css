@@ -32,7 +32,7 @@ body{
     margin-bottom: 20px;
 }
 
-input{
+#id, #password {
     width:300px;
     background-color: #FAFAFA;
     border-radius: 5px;
@@ -54,4 +54,9 @@ input{
     margin-top:180px; 
     text-decoration: none;
     color:#577296;
+}
+
+#loginButton:hover{
+    cursor: pointer;
+    
 }
