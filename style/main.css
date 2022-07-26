@@ -29,7 +29,7 @@
     text-align: center;
     width:200px;
     height: 30px;
-    border:1px solid #E6E6E6;
+    border:1.5px solid #E6E6E6;
     border-radius: 3px;
 }
 
@@ -40,7 +40,7 @@
 
 /* --------------------메인 컨테이너-------------------- */
 .mainContainer{
-    padding-top: 60px;
+    padding-top: 45px;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -50,13 +50,12 @@
 .asideFeed{
     width: 300px;
     margin-top:50px;
-    border: 1px solid #E6E6E6;
 }
 
 /* --------------------피드------------------- */
 .feedBox{
     margin-top:50px;
-    margin-right:50px;
+    margin-right:30px;
     border: 1px solid #E6E6E6;
     width: 500px;
     background-color: #ffffff;
@@ -181,15 +180,11 @@
 
 
 
-
-
-
-
+/* --------------------스토리-------------------- */
 .meBox{
     display: flex;
     align-items: center;
     height: 60px;
-    border:1px solid red;
 }
 
 
@@ -203,9 +198,117 @@
 .meEngName{
     font-size:15px;
     padding:2px;
+    font-weight: bold;
 }
 
 .meName{
     font-size:15px;
     padding:2px;
+    color: #9E9E9E;
+}
+
+
+.storyBox{
+    border: 1.5px solid #E6E6E6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.asideBoxTop{
+    display: flex;
+    justify-content: space-between;
+    font-size:13px;
+    padding:10px 15px;
+    font-weight: bold;
+}
+
+.storyEvery{
+    color: #9E9E9E;
+}
+
+.asideUserSpace{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+
+.asideUserSpace img{
+    width:40px;
+    height: 40px;
+    border-radius: 70%;
+    margin: 0px 15px;
+}
+
+.asideUser{
+    font-size:13px;
+}
+.asideUserName{
+    font-weight: bold;
+    padding:1px
+}
+.asideUserTime{
+    color: #9E9E9E;
+    padding:1px
+}
+
+
+
+
+
+
+
+.recommendBox{
+    border: 1.5px solid #E6E6E6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 200px;
+    overflow: hidden;
+    margin-top:11px;
+}
+
+.recommendTop{
+    display: flex;
+    justify-content: space-between;
+    font-size:13px;
+    padding:10px;
+    font-weight: bold;
+}
+
+.asideGray{
+    color: #9E9E9E;
+}
+
+
+
+
+
+.asideUserFriend{
+    display: inline-block;
+    color: #9E9E9E;
+    padding:1px;
+    width:167px;
+    white-space : nowrap;
+    overflow: hidden;
+    text-overflow : ellipsis 
+
+}
+
+.followButton{
+    border:0;
+    outline:0;
+    background-color: transparent;
+    color:#0095F6
+}
+
+.noticeBox{
+    width:80%;
+    color:#DCDCDC;
+    font-size:15px;
+}
+
+.noticeInfo{
+    margin:13px 0px 15px 0px;
 }
