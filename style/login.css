@@ -56,7 +56,6 @@ body{
     color:#577296;
 }
 
-#loginButton:hover{
+.loginButtonHover{
     cursor: pointer;
-    
 }

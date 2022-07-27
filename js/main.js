@@ -3,7 +3,7 @@ const commentContainer = document.querySelectorAll('.commentContainer')
 const commentInput = document.querySelectorAll('.commentInput')
 
 //--------------------댓글 구현-------------------//
-commentButton.forEach((btn,idx)=>btn.addEventListener('click', ()=>commentAdd(idx)))
+commentButton.forEach((btn,idx)=>btn.addEventListener('click', () => commentAdd()))
 
 commentInput.forEach((input,idx)=>input.addEventListener('keyup', (key) => {
     if (key.key === 'Enter') commentAdd(idx)
