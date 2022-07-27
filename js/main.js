@@ -11,16 +11,18 @@ commentInput.forEach((input,idx)=>input.addEventListener('keyup', (key) => {
 }))
 
 function commentButtonStyle(idx){
-    if (commentInput[idx].value>1) {
+    if (commentInput[idx].value.length>0) {
+        console.log(commentInput[idx].value.length,'true')
         commentButton[idx].style.color = '#0095F6'
         commentButton[idx].style.fontWeight = 'bold'
     } else{
+        console.log(commentInput[idx].value.length,'false')
         commentButton[idx].style='';
     }
 }
 
 function commentAdd(idx) {
-    console.log(idx)
+    if(commentInput[idx].value=='') return;
     const commentBoxDiv = document.createElement('div')
     const commentDiv = document.createElement('div')
     const userNameSpan = document.createElement('span')
