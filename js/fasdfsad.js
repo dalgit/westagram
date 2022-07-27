@@ -1,26 +1,27 @@
 const commentButton = document.querySelectorAll('.commentButton')
 const commentContainer = document.querySelectorAll('.commentContainer')
-const commentInput = document.querySelectorAll('.commentInput')
+const commentInput = document.querySelectorAll('.commentInput')[0]
 
 //--------------------댓글 구현-------------------//
-commentButton.forEach((btn,idx)=>btn.addEventListener('click', ()=>commentAdd(idx)))
+commentButton[0].addEventListener('click', commentAdd);
 
-commentInput.forEach((input,idx)=>input.addEventListener('keyup', (key) => {
-    if (key.key === 'Enter') commentAdd(idx)
-    commentButtonStyle(idx)
-}))
+commentInput.addEventListener('keyup', (key) => {
+    if (key.key === 'Enter') commentAdd()
+    commentButtonStyle()
+})
 
-function commentButtonStyle(idx){
-    if (commentInput[idx].value>1) {
-        commentButton[idx].style.color = '#0095F6'
-        commentButton[idx].style.fontWeight = 'bold'
+function commentButtonStyle(){
+    if (commentInput.value>1) {
+        commentButton[0].style.color = '#0095F6'
+        commentButton[0].style.fontWeight = 'bold'
     } else{
-        commentButton[idx].style='';
+        commentButton[0].style='';
+        console.log(commentButton[0])
     }
 }
 
-function commentAdd(idx) {
-    console.log(idx)
+
+function commentAdd() {
     const commentBoxDiv = document.createElement('div')
     const commentDiv = document.createElement('div')
     const userNameSpan = document.createElement('span')
@@ -37,11 +38,11 @@ function commentAdd(idx) {
     commentBoxDiv.appendChild(commentDiv)
     commentBoxDiv.appendChild(imgTag)
 
-    commentDiv.innerHTML += commentInput[idx].value
-    commentContainer[idx].appendChild(commentBoxDiv);
-    commentInput[idx].value = '';
+    commentDiv.innerHTML += commentInput.value
+    commentContainer[0].appendChild(commentBoxDiv);
+    commentInput.value = '';
 
-    commentButtonStyle(idx)
+    commentButtonStyle()
     /* 함수가 실행되면 아래와 같은 폼이 됨
     <div class="commentBox">
         <div class="comment">
@@ -68,4 +69,4 @@ function commentAdd(idx) {
 
 
 
-////여기 부터 수정ss
+////여기 부터 수정 임미다.
