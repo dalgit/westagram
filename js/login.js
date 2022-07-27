@@ -1,6 +1,10 @@
 const id = document.getElementById('id')
 const password = document.getElementById('password')
 const loginButton = document.getElementById('loginButton')
+const error = document.getElementById('error')
+
+
+
 loginButton.disabled=true;
 
 id.addEventListener('keyup', () => buttonActive())
@@ -21,7 +25,10 @@ function buttonActive(){
 
 function validation(){
     if (id.value.includes('@') && password.value.length>4){
-        console.log('zzzzzz')
+        location.href='./main.html';
+    } else {
+        error.innerText='사용자 정보를 확인하고 다시 입력해주세요.';
     }
 }
+
 

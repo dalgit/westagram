@@ -59,3 +59,12 @@ body{
 .loginButtonHover{
     cursor: pointer;
 }
+
+#error{
+    position:absolute;
+    top:60%;
+    text-align: center;
+    width:100%;
+    color:#D1565B;
+    font-size: 15px;
+}
