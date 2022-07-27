@@ -160,6 +160,7 @@
     justify-content: space-between;
     align-items: center;
     padding:0 10px;
+    margin-top: 10px;
 }
 
 .commentInput{
@@ -168,15 +169,14 @@
     width:85%
 }
 
-.commentInputBox button{
+
+.commentButton{
     border:0;
     outline:0;
     background-color: transparent;
     color: #C4E1FB;
+    cursor: pointer;
 }
-
-
-
 
 
 
@@ -245,10 +245,16 @@
 .asideUser{
     font-size:13px;
 }
-.asideUserName{
+.userName{
     font-weight: bold;
     padding:1px
 }
+
+.comment .userName{
+    padding-right:4px;
+}
+
+
 .asideUserTime{
     color: #9E9E9E;
     padding:1px
@@ -277,7 +283,7 @@
     font-weight: bold;
 }
 
-.asideGray{
+.grayFont{
     color: #9E9E9E;
 }
 
@@ -311,4 +317,17 @@
 
 .noticeInfo{
     margin:13px 0px 15px 0px;
+}
+
+.commentMore{
+    font-size: 12px;
+    font-weight: bold;
+    color: #9E9E9E;
+    padding: 0 10px;
+}
+
+.commentTime{
+    font-size: 8px;
+    color: #9E9E9E;
+    padding: 5px 12px 0px 12px;
 }
